@@ -1,0 +1,10 @@
+.cart-item{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    color: crimson;
+    font-family: 'Montserrat', sans-serif;
+}
