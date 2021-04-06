@@ -11,15 +11,32 @@ a {
 }
 
 .cart {
+    margin-top: 5px;
+    margin-right: 0;
+}
+.cartIcon {
     width: 30px;
     height: 25px;
     margin-right: 0;
 }
 
 .user {
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+.userIcon {
     width: 25px;
     height: 25px;
-    margin-right: 0;
+    margin: 0;
+}
+
+.userIconDw {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    margin-left: -4px;
+    margin-bottom: -2px;
 }
 
 .burger {
