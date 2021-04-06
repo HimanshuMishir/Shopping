@@ -7,7 +7,7 @@
 
 a {
     text-decoration: none;
-    color: rgb(241, 204, 204);
+    color: #f1cccc;
 }
 
 .cart {
@@ -47,7 +47,7 @@ a {
 .burger div {
     width: 25px;
     height: 5px;
-    background-color: rgb(241, 204, 204);
+    background-color: #f1cccc;
     margin: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -58,7 +58,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: crimson;
+    background-color: #dc143c;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -136,7 +136,7 @@ nav {
     letter-spacing: 3px;
     font-size: 35px;
     font-family: 'Dancing Script', cursive;
-    color: crimson;
+    color: #dc143c;
     margin: auto;
 }
 
@@ -147,7 +147,7 @@ nav {
 .centered-button {
     height: 50px;
     width: 300px;
-    background-color: crimson;
+    background-color: #dc143c;
     border-radius: 25px;
     display: flex;
     align-items: center;
