@@ -40,3 +40,26 @@
 .svgBtn:focus{
     outline: none;
 }
+
+.row{
+    width: 75%;
+    display: flex;
+    float: right;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+
+}
+
+.productImage{
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    float: left;
+}
+
+@media screen and (max-width: 600px){
+    .row{
+        width: 100%;
+    }
+}
