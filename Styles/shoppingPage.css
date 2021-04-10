@@ -87,4 +87,15 @@
     .row{
         width: 100%;
     }
+
+    .searchBarDiv{
+        margin:auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border: 4px solid #dc143c;
+        border-radius: 50px;
+    }
 }
