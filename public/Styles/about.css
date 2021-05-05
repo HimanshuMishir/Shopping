@@ -1,0 +1,26 @@
+.about-container{
+    display: block;
+    box-sizing: border-box;
+    max-width: 70%;
+    border: 2px solid brown;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 5px maroon;
+}
+.image{
+    max-width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
