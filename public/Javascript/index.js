@@ -17,3 +17,9 @@ const navslide = () => {
     });
 }
 navslide();
+
+const loadProducts = async ()=>{
+    const products = await fetch('http://adminfilesupload.herokuapp.com/api/getproductinfo').then((products)=>{products.json()})
+    console.log(products);
+
+}

@@ -221,6 +221,10 @@
         <p>Images are from <a href="#">Internet</a></p>
       </div>
     </footer>
-    <script src="./Javascript/index.js"></script>
+    <!-- <script src="./Javascript/index.js"></script> -->
+    <script>
+      fetch('http://adminfilesupload.herokuapp.com/api/getproductinfo').then((res)=>res.json())
+    .then((products)=>{console.log(products)});
+    </script>
   </body>
 </html>
