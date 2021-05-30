@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    
     overflow-x: hidden;
 }
 
@@ -20,24 +20,17 @@ a {
     margin-right: 0;
 }
 
-.user {
-    margin-top: 5px;
-    margin-right: 0;
-}
 
-.userIcon {
-    width: 25px;
-    height: 25px;
-    margin: 0;
-}
 
-.userIconDw {
+
+
+ .userIconDw {
     width: 10px;
     height: 10px;
     margin: 0;
     margin-left: -4px;
     margin-bottom: -2px;
-}
+} 
 
 .burger {
     display: none;
@@ -155,7 +148,7 @@ nav {
 }
 
 .centered-button:hover {
-    background-color: maroon;
+    background-color: #800000;
     cursor: pointer;
     opacity: 0.8;
 }
