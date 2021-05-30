@@ -228,15 +228,15 @@ x sigin/signup popup
 }
 
 .cd-signin-modal__label.cd-signin-modal__label--username {
-  background-image: url("../img/cd-icon-username.svg");
+  background-image: url("../Images/cd-icon-username.svg");
 }
 
 .cd-signin-modal__label.cd-signin-modal__label--email {
-  background-image: url("../img/cd-icon-email.svg");
+  background-image: url("../Images/cd-icon-email.svg");
 }
 
 .cd-signin-modal__label.cd-signin-modal__label--password {
-  background-image: url("../img/cd-icon-password.svg");
+  background-image: url("../Images/cd-icon-password.svg");
 }
 
 .cd-signin-modal__input {
@@ -403,7 +403,7 @@ x sigin/signup popup
   height: 40px;
   right: 0;
   top: -40px;
-  background: url("../img/cd-icon-close.svg") no-repeat center center;
+  background: url("../Images/cd-icon-close.svg") no-repeat center center;
   color: transparent;
   text-indent: 100%;
   white-space: nowrap;
