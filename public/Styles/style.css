@@ -76,17 +76,21 @@ Login/Signup modal window
     display: block;
     margin-left: 1em;
   }
-  
-  .cd-main-nav__item {
+
+  .cd-main-nav__item a {
     display: block;
     height: auto;
     line-height: normal;
     background: transparent;
   }
   .cd-main-nav__item.cd-main-nav__item--signin,
-  .cd-main-nav__item.cd-main-nav__item--signup {
+  .cd-main-nav__item {
     padding: 0.6em 1em;
-    
+    color: #f1cccc;
+    text-decoration: underline;
+  }
+  .cd-main-nav__item--signin:hover{
+    color: #fff;
   }
 }
 
@@ -101,14 +105,15 @@ x sigin/signup popup
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(238, 227, 220, 0.9);
+  background: rgb(238, 226, 226);
+  
   z-index: 3;
   overflow-y: auto;
   cursor: pointer;
   visibility: hidden;
   opacity: 1;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
-  transition: opacity 0.1, visibility 0.1s;
+  transition: opacity 0.1s, visibility 0.1s;
 }
 
 .cd-signin-modal.cd-signin-modal--is-visible {
@@ -117,9 +122,8 @@ x sigin/signup popup
 }
 
 .cd-signin-modal__container {
-  position: relative;
-  width: 90%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 650px;
   background: #fff;
   margin: 3em auto 4em;
   cursor: auto;
@@ -261,7 +265,7 @@ x sigin/signup popup
 }
 
 .cd-signin-modal__input.cd-signin-modal__input--has-border:focus {
-  border-color: #0c29cc;
+  border-color: #f1cccc;
   -webkit-box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
   box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
   outline: none;
@@ -391,7 +395,7 @@ x sigin/signup popup
 }
 
 .cd-signin-modal__bottom-message a {
-  color: #fff;
+  color: rgb(87, 67, 67);
   text-decoration: underline;
 }
 

@@ -24,3 +24,6 @@
     flex-direction: column;
     margin: 0px 10px;
 }
+.logo-link{
+    text-transform: capitalize;
+}

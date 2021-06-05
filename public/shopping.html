@@ -1,191 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#dc143c">
 
-    <title>Shop your way</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./Styles/index.css" />
-    <link rel="stylesheet" href="./Styles/shoppingPage.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dc143c">
 
-  <body>
-    <nav>
-      <div class="logo">
-        <h4>Party Shop</h4>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a class="links" href="./index.html">Home</a>
-        </li>
-        <li>
-          <a class="links" href="./shopping.html">Shop Now</a>
-        </li>
-        <li>
-          <a class="links" href="#">Services</a>
-        </li>
-        <li>
-          <a class="links" href="./about.html">About</a>
-        </li>
-      </ul>
-      <div class="user">
-        <a href="user.html">
-          <img class="userIcon" src="./Icons/account.png" alt="account" />
-        </a>
-      </div>
-      <div class="cart">
-        <a href="./cart.html">
-          <img class="cartIcon" src="./Icons/shopping-cart.png" alt="cart" />
-        </a>
-      </div>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
+  <title>Shop your way</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Styles/index.css" />
+  <link rel="stylesheet" href="./Styles/shoppingPage.css" />
+</head>
 
-    <div class="searchBarDiv">
-      <table class="searchBarContainer">
-        <tr>
-          <td>
-            <input
-              class="search"
-              type="text"
-              name="search"
-              placeholder="Search Items"
-            />
-          </td>
-          <td>
-            <button class="svgBtn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 0 24 24"
-                width="30px"
-                fill="#dc143c"
-              >
-                <path d="M0 0h24v24H0V0z" fill="none" />
-                <path
-                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                />
-              </svg>
-            </button>
-          </td>
-        </tr>
-      </table>
+<body>
+  <nav>
+    <div class="logo">
+      <h4>Party Shop</h4>
     </div>
+    <ul class="nav-links">
+      <li>
+        <a class="links" href="./index.html">Home</a>
+      </li>
+      <li>
+        <a class="links" href="./shopping.html">Shop Now</a>
+      </li>
+      <li>
+        <a class="links" href="#">Services</a>
+      </li>
+      <li>
+        <a class="links" href="./about.html">About</a>
+      </li>
+    </ul>
+    <div class="user">
+      <a href="user.html">
+        <img class="userIcon" src="./Icons/account.png" alt="account" />
+      </a>
+    </div>
+    <div class="cart">
+      <a href="./cart.html">
+        <img class="cartIcon" src="./Icons/shopping-cart.png" alt="cart" />
+      </a>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
 
-    <div class="catagories">
-      <div class="leftrow">
-        <div class="filter">
-          <h1>Filter Items</h1>
-        </div>
+  <div class="searchBarDiv">
+    <table class="searchBarContainer">
+      <tr>
+        <td>
+          <input class="search" type="text" name="search" placeholder="Search Items" />
+        </td>
+        <td>
+          <button class="svgBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="#dc143c">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="catagories">
+    <div class="leftrow">
+      <div class="filter">
+        <h1>Filter Items</h1>
       </div>
-      <div class="row">
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/Shirt-1001.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-
-            <h1>Shirt For Men</h1>
-            <p>₹ 1999</p>
-          </div>
-            <div class="addToCart">Add to Cart</div>
-        </div>
-
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/T-shirt-001.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Black T Shirt For Women</h1>
-            <p>₹ 1499</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/T-shirt-004.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Black T Shirt For Women</h1>
-            <p>₹ 1299</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/T-shirt-003.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Black T Shirt For Women</h1>
-            <p>₹ 1199</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/T-shirt-008.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Black T Shirt For Women</h1>
-            <p>₹ 14999</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/T-shirt-002.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Biege T Shirt For Women & Men</h1>
-            <p>₹ 14999</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/T-shirt-007.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Black T Shirt For Men</h1>
-            <p>₹ 399</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
-        <div class="col-1">
-          <img
-            class="productImage"
-            src="./Images/products/Shoes-102.jpg"
-            alt=""
-          />
-          <div class="productInfo">
-            <h1>Adidas Black & White Shoes </h1>
-            <p>₹ 4999</p>
-          </div>
-          <div class="addToCart">Add to Cart</div>
-        </div>
+    </div>
+    <div class="row">
+     
       </div>
     </div>
 
@@ -221,10 +110,8 @@
         <p>Images are from <a href="#">Internet</a></p>
       </div>
     </footer>
-    <!-- <script src="./Javascript/index.js"></script> -->
-    <script>
-      fetch('https://adminfilesupload.herokuapp.com/api/getproductinfo').then((res)=>res.json())
-    .then((products)=>{console.log(products)});
-    </script>
-  </body>
+    <script src="./Javascript/index.js"></script>
+    <script src="./Javascript/products.js"></script>
+</body>
+
 </html>
