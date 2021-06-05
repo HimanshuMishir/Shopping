@@ -57,6 +57,9 @@
     width: 300px;
     float: left;
 }
+.productImage:hover{
+    opacity: 0.7;
+}
 .col-1{
     display: flex;
     flex-flow: column wrap;
@@ -73,14 +76,17 @@
     font-size: 90%;
 }
 .addToCart{
-    width: 300px;
     font-size: 19px;
     background-color: #dc143c;
     color: #f1cccc;
-    margin: auto;
+    margin: 10px;
     padding: 8px 30%;
     align-items: center;
     margin-bottom: 10px;
+}
+.addToCart:hover{
+    color:#fff;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {

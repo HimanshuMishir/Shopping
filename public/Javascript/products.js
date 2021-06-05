@@ -5,7 +5,7 @@
   }); */
 
 // console.log("Hello");
-fetch("https://adminfilesupload.herokuapp.com/api/getproductinfo")
+fetch("http://localhost:3001/api/getproductinfo")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
@@ -23,9 +23,10 @@ fetch("https://adminfilesupload.herokuapp.com/api/getproductinfo")
       const productLink = document.createElement('a');
       productLink.href = `./productPage.html?_id=${element._id}`
       const productImage = document.createElement("img");
-      productImage.src = `https://adminfilesupload.herokuapp.com/images/${element.product_images_path[0]}`;
+      productImage.src = `http://localhost:3001/images/${element.product_images_path[0]}`;
       productImage.className = "productImage";
-      productDiv.appendChild(productImage);
+      productLink.appendChild(productImage);
+      productDiv.appendChild(productLink);
       const productInfo = document.createElement("div");
       productInfo.className = "productInfo";
       const productTitle = document.createElement("h1");

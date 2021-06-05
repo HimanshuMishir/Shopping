@@ -5,11 +5,6 @@
   overflow-x: hidden;
 }
 
-/*  a {
-    text-decoration: none;
-    color: #f1cccc;
-}  */
-
 .cart {
   margin-top: 5px;
   margin-right: 0;
@@ -51,21 +46,34 @@
 }
 
 nav {
+  position: fixed;
+  margin-bottom: 8vh;
   display: flex;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
+  color: #f1cccc;
   background-color: #dc143c;
   font-family: "Montserrat", sans-serif;
+  transition: 0.2s;
 }
 
-.logo a {
+.logoLink{
   text-decoration: none;
-  color: #f1cccc;
+  color: #dc143c;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 25px;
 }
+.logoColor {
+  text-decoration: none;
+  color: #f1cccc; 
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
 
 .nav-links {
   display: flex;
@@ -80,11 +88,27 @@ nav {
   font-weight: bold;
   font-size: 14px;
 }
+
 .links:hover {
   color: #fff;
 }
 
-.nav-links li {
+.navLinksHover {
+  display: flex;
+  min-width: 35%;
+  justify-content: space-around;
+  color: #f1cccc;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.linksHover:hover {
+  color: #dc143c;
+}
+
+li {
   list-style: none;
 }
 
@@ -133,7 +157,7 @@ nav {
   left: 15%;
   width: 70%;
   text-align: center;
-  color: rgb(241, 204, 204);
+  color: #f1cccc;
   letter-spacing: 3px;
   font-size: 35px;
   font-family: "Dancing Script", cursive;
@@ -146,6 +170,7 @@ nav {
 }
 
 .centered-button {
+  color: #f1cccc;
   height: 50px;
   width: 300px;
   background-color: #dc143c;
@@ -157,12 +182,13 @@ nav {
 
 .centered-button:hover {
   background-color: #800000;
+  color: #fff;
   cursor: pointer;
   opacity: 0.8;
 }
 
 .centered-button a {
-  color: rgb(241, 204, 204);
+  color: inherit;
   font-size: 20px;
   letter-spacing: 3px;
   font-family: "Montserrat", sans-serif;
@@ -170,6 +196,9 @@ nav {
   text-decoration: none;
   margin: auto;
   align-items: center;
+}
+.centered-button a:hover{
+  color: inherit;
 }
 
 /* footer */
@@ -200,7 +229,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   opacity: 0.7;
   padding: 3px;
-  color: rgb(241, 204, 204);
+  color: #f1cccc;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -208,7 +237,7 @@ footer {
 }
 
 .copyright {
-  color: rgb(241, 204, 204);
+  color: #f1cccc;
   margin: auto;
   font-size: 13px;
   opacity: 0.8;
