@@ -96,7 +96,7 @@
 
     .searchBarDiv{
         margin:auto;
-        margin-top: 10px;
+        margin-top: max(37px, 8vh);
         margin-bottom: 10px;
         position: relative;
         width: 100%;
