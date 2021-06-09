@@ -4,9 +4,7 @@ Primary style
 
 -------------------------------- */
 
-html {
-  font-size: 62.5%;
-}
+
 
 body {
   font-size: 1.6rem;
@@ -45,10 +43,13 @@ Login/Signup modal window
   margin: auto;
   height: auto;
   width: 100%;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  text-decoration: underline;
+  color: #f1cccc;
 }
+.loginClass a{
+  color: #f1cccc;
+}
+
 
 .cd-main-nav__list.cd-main-nav__list--is-visible {
   -webkit-transform: translateY(50px);
@@ -75,18 +76,20 @@ Login/Signup modal window
   .cd-main-nav__list li {
     display: block;
     margin-left: 1em;
+    color: #f1cccc;
   }
 
-  .cd-main-nav__item a {
+  .cd-main-nav__item--signin{
     display: block;
     height: auto;
     line-height: normal;
-    background: transparent;
+    color: #f1cccc;
   }
+  
   .cd-main-nav__item.cd-main-nav__item--signin,
   .cd-main-nav__item {
+    color: #dc143c;
     padding: 0.6em 1em;
-    color: #f1cccc;
     text-decoration: underline;
   }
 }
