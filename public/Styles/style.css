@@ -88,7 +88,6 @@ Login/Signup modal window
   
   .cd-main-nav__item.cd-main-nav__item--signin,
   .cd-main-nav__item {
-    color: #dc143c;
     padding: 0.6em 1em;
     text-decoration: underline;
   }
