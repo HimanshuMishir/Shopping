@@ -20,6 +20,8 @@ const navslide = () => {
 };
 navslide();
 
+//Scroll animation
+
 window.onscroll = () => {
   scrollFunction();
 };

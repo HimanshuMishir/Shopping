@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./Styles/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="./Styles/style.css">
   <link rel="stylesheet" href="./Styles/index.css" />
+  <script src="./Javascript/checkLogin.js"></script>
 </head>
 
 <body>
@@ -38,218 +39,220 @@
     </ul>
     <div class="user">
       <ul class="cd-main-nav__list js-signin-modal-trigger user">
-        <li class="loginClass"><a class="cd-main-nav__item cd-main-nav__item--signin " data-signin="login" href="#0">
-            Login
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="cart">
-      <a href="./cart.html">
-        <img class="cartIcon" src="./Icons/shopping-cart.png" alt="cart" />
-      </a>
-    </div>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+        <li id="login-signup-link" class="loginClass"><a class="cd-main-nav__item cd-main-nav__item--signin " data-signin="login" href="#0">
+          Login
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="cart">
+    <a href="./cart.html">
+      <img class="cartIcon" src="./Icons/shopping-cart.png" alt="cart" />
+    </a>
+  </div>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
 
 
 
 
-  <div class="cd-signin-modal js-signin-modal">
-    <!-- this is the entire modal form, including the background -->
-    <div class="cd-signin-modal__container">
-      <!-- this is the container wrapper -->
-      <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
-        <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
-        <li><a href="#0" data-signin="signup" data-type="signup">New account</a></li>
-      </ul>
-
-      <div class="cd-signin-modal__block js-signin-modal-block" data-type="login">
-        <!-- log in form -->
-        <form class="cd-signin-modal__form">
-          <p class="cd-signin-modal__fieldset">
-            <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace"
-              for="signin-email">E-mail</label>
-            <input
-              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
-              id="signin-email" type="email" placeholder="E-mail">
-            <span class="cd-signin-modal__error">Error message here!</span>
-          </p>
-
-          <p class="cd-signin-modal__fieldset">
-            <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace"
-              for="signin-password">Password</label>
-            <input
-              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
-              id="signin-password" type="text" placeholder="Password">
-            <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
-            <span class="cd-signin-modal__error">Error message here!</span>
-          </p>
-
-          <p class="cd-signin-modal__fieldset">
-            <input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
-            <label for="remember-me">Remember me</label>
-          </p>
-
-          <p class="cd-signin-modal__fieldset">
-            <input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
-          </p>
-        </form>
-
-        <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your
-            password?</a></p>
+<div class="cd-signin-modal js-signin-modal">
+  <!-- this is the entire modal form, including the background -->
+  <div class="cd-signin-modal__container">
+    <!-- this is the container wrapper -->
+    <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
+      <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
+      <li><a href="#0" data-signin="signup" data-type="signup">New account</a></li>
+    </ul>
+    
+    <div class="cd-signin-modal__block js-signin-modal-block" data-type="login">
+      <!-- log in form -->
+      <form class="cd-signin-modal__form" id="loginForm">
+        <p class="cd-signin-modal__fieldset">
+          <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace"
+          for="signin-email">E-mail</label>
+          <input
+          class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+          name="username" id="login-email" type="email" placeholder="E-mail">
+          <span class="cd-signin-modal__error">Error message here!</span>
+        </p>
+        
+        <p class="cd-signin-modal__fieldset">
+          <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace"
+          for="signin-password">Password</label>
+          <input
+          class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+          name="password" id="login-password" type="password" placeholder="Password">
+          <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Show</a>
+          <span class="cd-signin-modal__error">Error message here!</span>
+        </p>
+        
+        <p class="cd-signin-modal__fieldset">
+          <input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
+          <label for="remember-me">Remember me</label>
+        </p>
+        
+        <p class="cd-signin-modal__fieldset">
+          <input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
+        </p>
+      </form>
+      
+      <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your
+        password?</a></p>
       </div> <!-- cd-signin-modal__block -->
-
+      
       <div class="cd-signin-modal__block js-signin-modal-block" data-type="signup">
         <!-- sign up form -->
-        <form class="cd-signin-modal__form">
+        <form class="cd-signin-modal__form" id="registerForm">
           <p class="cd-signin-modal__fieldset">
             <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace"
-              for="signup-username">Username</label>
+            for="signup-username">Username</label>
             <input
-              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
-              id="signup-username" type="text" placeholder="Username">
+            class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+            name="name" id="name" type="text" placeholder="Full Name">
             <span class="cd-signin-modal__error">Error message here!</span>
           </p>
-
+          
           <p class="cd-signin-modal__fieldset">
             <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace"
-              for="signup-email">E-mail</label>
+            for="signup-email">E-mail</label>
             <input
-              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
-              id="signup-email" type="email" placeholder="E-mail">
+            class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+            name="username" id="signup-username" type="email" placeholder="E-mail">
             <span class="cd-signin-modal__error">Error message here!</span>
           </p>
-
+          
           <p class="cd-signin-modal__fieldset">
             <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace"
-              for="signup-password">Password</label>
+            for="signup-password">Password</label>
             <input
-              class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
-              id="signup-password" type="text" placeholder="Password">
-            <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+            class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+            name="password" id="signup-password" type="text" placeholder="Password">
+            <a href="#0" class="cd-signin-modal__hide-password js-hide-password">Show</a>
             <span class="cd-signin-modal__error">Error message here!</span>
           </p>
-
+          
           <p class="cd-signin-modal__fieldset">
             <input type="checkbox" id="accept-terms" class="cd-signin-modal__input ">
             <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
           </p>
-
+          
           <p class="cd-signin-modal__fieldset">
+            <div id="error-msg" style="color: red;"></div>
             <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding"
-              type="submit" value="Create account">
+            type="submit" value="Create account">
           </p>
         </form>
       </div> <!-- cd-signin-modal__block -->
-
+      
       <div class="cd-signin-modal__block js-signin-modal-block" data-type="reset">
         <!-- reset password form -->
         <p class="cd-signin-modal__message">Lost your password? Please enter your email address. You will
           receive a link to create a new password.</p>
-
-        <form class="cd-signin-modal__form">
-          <p class="cd-signin-modal__fieldset">
-            <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace"
+          
+          <form class="cd-signin-modal__form">
+            <p class="cd-signin-modal__fieldset">
+              <label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace"
               for="reset-email">E-mail</label>
-            <input
+              <input
               class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
               id="reset-email" type="email" placeholder="E-mail">
-            <span class="cd-signin-modal__error">Error message here!</span>
-          </p>
-
-          <p class="cd-signin-modal__fieldset">
-            <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding"
+              <span class="cd-signin-modal__error">Error message here!</span>
+            </p>
+            
+            <p class="cd-signin-modal__fieldset">
+              <input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding"
               type="submit" value="Reset password">
-          </p>
-        </form>
-
-        <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="login">Back
+            </p>
+          </form>
+          
+          <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="login">Back
             to log-in</a></p>
-      </div> <!-- cd-signin-modal__block -->
-      <a href="#0" class="cd-signin-modal__close js-close">Close</a>
-    </div>
-  </div>
-
-  <section class="upperMostSection">
-    <div class="img-container">
-      <img src="./Images/shopping.jpg" class="image" alt="shopping" />
-      <div class="quotes-button">
-        <h3 class="quotes">“Happiness is not in money, but in shopping.”</h3>
-        <div class="centered-button">
-          <a href="./shopping.html">Shop Now</a>
+          </div> <!-- cd-signin-modal__block -->
+          <a href="#0" class="cd-signin-modal__close js-close">Close</a>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="img-container1">
-      <img class="image1" src="./Images/shopping1.jpg" class="image" alt="shopping" />
-      <h3 class="quote1">
-        A product is something made in a factory; a brand is something that is
-        bought by the customer. A product can be copied by a competitor; a
-        brand is unique. A product can be quickly outdated; a successful brand
-        is timeless.
-      </h3>
-    </div>
-    <div class="img-container1">
-      <img src="./Images/shopping2.jpg" class="image1" alt="shopping" />
-      <h3 class="quote1">
-        My feeling about work is it’s much more about the experience of doing
-        is than the end product.
-      </h3>
-    </div>
-    <div class="img-container1">
-      <img src="./Images/shopping3.jpg" class="image1" alt="shopping" />
-      <h3 class="quote1">
-        “Shopping is better than sex. If you’re not satisfied after shopping,
-        you can make an exchange for something you really like.”
-      </h3>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footerdiv">
-      <ul class="footer-list">
-        <li>
-          <a href="#">privacy & policy</a>
-        </li>
-        <li>
-          <a href="#">Security</a>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li>
-          <a href="#">Payment</a>
-        </li>
-        <li>
-          <a href="#">careers</a>
-        </li>
-      </ul>
-      <ul class="footer-list">
-        <li>
-          <a href="#">Help</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <p>copyright &copy; 2021 registered</p>
-      <p>Images are from <a href="#">Internet</a></p>
-    </div>
-  </footer>
-
-
-
-  <script src="./Javascript/index.js"></script>
-  <script src="./Javascript/placeholders.min.js"></script> <!-- Resource JavaScript -->
-  <script src="./Javascript/main.js"></script>
-</body>
-
-</html>
+      
+      <section class="upperMostSection">
+        <div class="img-container">
+          <img src="./Images/shopping.jpg" class="image" alt="shopping" />
+          <div class="quotes-button">
+            <h3 class="quotes">“Happiness is not in money, but in shopping.”</h3>
+            <div class="centered-button">
+              <a href="./shopping.html">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="img-container1">
+          <img class="image1" src="./Images/shopping1.jpg" class="image" alt="shopping" />
+          <h3 class="quote1">
+            A product is something made in a factory; a brand is something that is
+            bought by the customer. A product can be copied by a competitor; a
+            brand is unique. A product can be quickly outdated; a successful brand
+            is timeless.
+          </h3>
+        </div>
+        <div class="img-container1">
+          <img src="./Images/shopping2.jpg" class="image1" alt="shopping" />
+          <h3 class="quote1">
+            My feeling about work is it’s much more about the experience of doing
+            is than the end product.
+          </h3>
+        </div>
+        <div class="img-container1">
+          <img src="./Images/shopping3.jpg" class="image1" alt="shopping" />
+          <h3 class="quote1">
+            “Shopping is better than sex. If you’re not satisfied after shopping,
+            you can make an exchange for something you really like.”
+          </h3>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="footerdiv">
+          <ul class="footer-list">
+            <li>
+              <a href="#">privacy & policy</a>
+            </li>
+            <li>
+              <a href="#">Security</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <a href="#">Payment</a>
+            </li>
+            <li>
+              <a href="#">careers</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>copyright &copy; 2021 registered</p>
+          <p>Images are from <a href="#">Internet</a></p>
+        </div>
+      </footer>
+      
+      
+      
+      <script src="./Javascript/index.js"></script>
+      <script src="./Javascript/placeholders.min.js"></script> <!-- Resource JavaScript -->
+      <script src="./Javascript/main.js"></script>
+      <script src="./Javascript/loginSignup.js"></script>
+    </body>
+    
+    </html>
