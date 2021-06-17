@@ -51,6 +51,7 @@
 
 
     <div class="user-main">
+        <h4 style="text-decoration: underline;" onclick="logout()">click here to Log out</h4>
         <h5>Wait for this feature...</h5>
     </div>
 
@@ -91,7 +92,11 @@
 
     </footer>
 
-
+    <script>
+        function logout(){
+            localStorage.removeItem('token');
+        }
+    </script>
     <script src="./Javascript/index.js"></script>
 </body>
 
