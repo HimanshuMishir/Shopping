@@ -40,6 +40,10 @@ fetch("https://adminfilesupload.herokuapp.com/api/getproductinfo")
       productAddToCart.innerHTML = "Add to Cart";
       productAddToCart.className = "addToCart";
       productAddToCart.id = element._id;
+      const product_id = document.createElement('input');
+      product_id.type = 'hidden';
+      product_id.value= 'element._id';
+      productAddToCart.appendChild(product_id);
       // console.log(element._id);
 
       productDiv.appendChild(productInfo);
