@@ -1,5 +1,7 @@
 const loadItems  = ()=>{
-const cartItems = 
+const cartItems = localStorage.getItem('product');
+console.log(cartItems);
 }
 
-window.onload = loadItems;
+
+loadItems();

@@ -9,11 +9,15 @@ const user = require("./models/users");
 const database_url = process.env.DBURL;
 const JWT_secret = process.env.JWT;
 
-mongoose.connect(database_url, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-});
+try {
+  mongoose.connect(database_url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  });
+} catch (error) {
+  console.log("Moongoose connection error");
+}
 
 const app = express();
 app.use(express.static("public"));
@@ -88,5 +92,5 @@ app.post("/api/register", async (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`The server is up and running on port ${process.env.PORT}`);
+  console.log(`The server is up and running on port http://localhost:${process.env.PORT}`);
 });
