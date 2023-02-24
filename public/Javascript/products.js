@@ -7,7 +7,7 @@
 // console.log("Hello");
 try {
   const productItems = fetch(
-    "https://adminfilesupload.herokuapp.com/api/getproductinfo"
+    "https://adminfilesupload.onrender.com/api/getproductinfo"
   )
     .then((response) => {
       if (!response.ok) {
